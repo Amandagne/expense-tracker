@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense </title>
+</head>
+<body>
+    <main id="page-wrapper">
+        <div class="container">
+            <h1>My Expenses Tracker</h1>
+            <form action="" id="form" name="sample">
+                <select name="paytype" id="payment-type">
+                    <option value="Payment Type" disabled selected>Payment Type</option>
+                    <option value="cash">Cash</option>
+                    <option value="debit card">Debit card</option>
+                    <option value="credit card">Credit card</option>
+                    <option value="crypto">Crypto</option>
+                </select>
+                <input type="text" id="name" placeholder="Name">
+                <input type="date" name="date" id="date" required>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit" id="submit" >Add Expense</button>
+            </form>
+        </div>
+        <div id="expense-list">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Payment Type</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+html{
+    font-size: 16px;
+    font-family: "Roboto";
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 50vw;
+    background-color: #fff;
+    padding: 1rem;
+    height: auto;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    position:sticky;
+    top:0;
+}
+
+.container h1{
+    text-align: center;
+    font-weight: bolder;
+}
+#form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1em;
+    grid-column-gap: 3em;
+    width: 80%;
+    margin: auto;
+}
+#form input, select, button{
+    padding: 1em;
+    border-radius: .3em;
+    outline: none;
+    border:1px solid #999;
+}
+#submit{
+    background-color: #343434;
+    color:white;
+    border:none;
+    /* width: 300px;
+    margin: 0 auto; */
+}
+#submit{
+    grid-column: span 2;
+}
+#expense-list{
+    width: 50vw;
+}
+table{
+    width: 100%;
+    border:none;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #232323;
+    color: white; 
+    text-align: left;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(182, 227, 255);
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(235, 247, 255);
+}
+th, td{
+    padding: 10px;
+    margin:0;
+    border:0;   
+}
